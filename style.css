@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+@import url(https://fonts.googleapis.com/css?family=Forum);
+#main{
+    margin: 50px 20px 20px 20px;
+    
+}
+
+.light-blue{
+    color: #51C4D3;
+}
+.card-text{
+    font-family: 'Forum';
+}
+.carousel-inner{
+    font-family: 'Forum';
+}
+.carousel-item{
+    font-family: 'Forum';
+}
+.carousel-inner{
+    font-family: 'Forum';
+}
+.carousel-control-prev{
+     font-family: 'Forum';
+}
+
+.outer-div {
+       
+    width: 100%;
+    text-align: center;
+   
+     font-family: monospace;
+  }
+  
+  .inner-div {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    font-family: monospace;
+   
+  }
+  
+
+
+  @media only screen and (min-width:100px) and (max-width :620px){
+   
+    body{
+        width: 120vh !important;
+    }
+
+  }
+
+  

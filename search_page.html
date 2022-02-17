@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="searchStyle.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+  <title>See Apartments</title>
+  <link rel="icon" href="assets/icon.png" type="image/icon type">
+  <link rel="shortcut" href="assets/icon.png" type="image/icon type">
+  <link rel="apple-touch-icon" href="assets/icon.png" type="image/icon type">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&family=Slabo+27px&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body_page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="index.html"
+          style="color: #ab9668;font-family: 'Slabo 27px', serif; font-size: x-large; font-weight: 700; font-family: 'Dancing Script';">
+          <img
+          src="assets/brand.png"
+          style="height: 40px; width: 60px;"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+          Bytový komplex Podhorská
+        </a>
+        <!-- Left links -->
+        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"
+                style="color: black; "></i></a>
+          </li> -->
+
+
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+      <a class="nav-link" href="tel:09999999999" style="float: right; color: black;"><button type="button"
+          class="btn btn-primary" style="color: #ab9668 ; background-color:rgb(81,81,81)">0999999999 <i
+            class="fa fa-phone" aria-hidden="true" style="margin-left: 5px;"></i>
+        </button></a>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+
+  <div style="background-color: rgb(227,227,227)e; " class="outer-div">
+
+    <div class=" inner-div form-show">
+      <select id="select" class="form-select form-select-sm" aria-label=".form-select-sm example"
+        style="width: 150px; float: right;">
+        <option selected>Filter Price</option>
+        <option value="top">Top</option>
+        <option value="down">Down</option>
+
+      </select>
+    </div>
+
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga1" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa1"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa1"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora1">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+       
+          <p id="flatSizea1">50,19 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+          <p id="balconySizea1">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea1"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla1"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga2" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa2"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa2">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora2">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea2">50,19 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea2">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea2"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla2"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga3" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa3"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa3">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora3">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea3">67,97 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea3">2,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea3"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla3"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga4" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa4"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa4">1</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora4">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea4">38,4 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea4">3,81 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea4"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla4"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga5" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa5"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa5">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora5">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea5">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea5">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea5"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla5"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row ">
+
+        <div class="col col-show">
+          <img id="imga6" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa6"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa6">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora6">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea6">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea6">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea6"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla6"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga7" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa7"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa7">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora7">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea7">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea7">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea7"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla7"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga8" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa8"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa8">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora8">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea8">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea8">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea8"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla8"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga9" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa9"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa9">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora9">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea9">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea9">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea9"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla9"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga10" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa10"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa10">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora10">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea10">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea10">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea10"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla10"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga11" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa11"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa11">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora11">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea11">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea11">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea11"></p>
+        </div>
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla11"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imga12" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numa12"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsa12">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floora12">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizea12">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizea12">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="pricea12"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avla12"></p>
+        </div>
+
+      </div>
+
+    </div>
+    <hr>
+    <hr>
+    <!-- b -->
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb1" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb1"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb1"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb1">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+          
+          <p id="flatSizeb1">50,19 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+          <p id="balconySizeb1">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb1"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb1"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb2" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb2"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb2">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb2">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb2">50,19 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb2">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb2"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb2"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb3" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb3"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb3">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb3">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb3">67,97 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb3">2,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb3"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb3"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb4" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb4"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb4">1</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb4">1.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb4">38,4 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb4">3,81 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb4"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb4"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb5" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb5"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb5">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb5">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb5">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb5">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb5"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb5"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row ">
+
+        <div class="col col-show">
+          <img id="imgb6" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb6"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb6">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb6">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb6">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb6">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb6"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb6"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb7" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb7"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb7">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb7">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb7">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb7">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb7"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb7"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb8" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb8"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb8">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb8">2.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb8">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb8">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb8"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb8"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb9" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb9"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb9">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb9">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb9">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb9">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb9"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb9"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb10" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb10"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb10">2</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb10">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb10">50,65 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb10">4,3 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb10"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb10"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb11" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb11"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb11">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb11">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb11">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb11">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb11"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb11"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" inner-div row-show">
+
+      <div class="row">
+
+        <div class="col col-show">
+          <img id="imgb12" src="assets/1.jpg" style="border-radius: 50%; width: 90px; height: 90px;"
+            alt="building image">
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat nr.</h5>
+
+          <p id="numb12"></p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Rooms</h5>
+
+          <p id="roomsb12">3</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Floor</h5>
+
+          <p id="floorb12">3.NP</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Flat size</h5>
+
+          <p id="flatSizeb12">69,29 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Balcony size</h5>
+
+          <p id="balconySizeb12">4,89 m²</p>
+        </div>
+
+        <div class="col col-show">
+          <h5>Sale price </h5>
+          <p id="priceb12"></p>
+        </div>
+
+        <div class="col col-show-v">
+          <h5>Availability</h5>
+
+          <p id="avlb12"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <footer class="bg-dark text-center text-white text-lg-start" id="fotter">
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-family: 'Hind', sans-serif;
+    font-family: 'Slabo 27px', serif;">
+      <a href="http://codrex.co" style="color :white">powered by:<img style="width: 250px; height: 40px;"
+          src="assets/ddee.png" alt=""></a>
+
+
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <script src="aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({ duration: 700, });
+  </script>
+</body>
+
+</html>
