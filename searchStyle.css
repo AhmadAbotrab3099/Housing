@@ -1,0 +1,75 @@
+.outer-div {
+       
+    width: 100%;
+    text-align: center;
+     
+  }
+  
+  .inner-div {
+    display: inline-block;
+    margin: 1 auto;
+    padding: 2px;
+   
+  }
+  .body_page{
+    background-color:rgb(227,227,227)
+  }
+
+  
+
+  .row-show{
+    background-color: white; 
+    color: #ab9668; 
+    width: 72%; 
+    margin: 20px;
+    border-radius: 18px;
+    box-shadow: -50px -20px rgb(81,81,81);
+  }
+
+  .form-show{
+   
+    color: black; 
+    width: 70%; 
+    margin-top: 10px;
+    border-radius:8px;
+  }
+
+  .row-show:hover{
+      -webkit-transform: scale(1,1);
+      transform: scale(1.1,1.1);
+     
+      transition-duration: 1.2s;
+      
+  }
+
+  .col-show{
+    height: 80px;
+    margin: 22px 0px 22px 0px !important;
+    border-left: 0.5px solid rgb(81 81 81);
+  }
+
+  .col-show-v{
+    margin: 22px 0px 22px 0px !important;
+    border-left: 0.5px solid rgb(81 81 81);
+    
+  }
+
+  .volny{
+    color: #51C4D3;
+  }
+
+.rezervovany{
+  color: rgb(236, 15, 15);
+}
+ 
+@media only screen and (min-width:75px) and (max-width :500px){
+   
+  body{
+      width: 120vh !important;
+  }
+
+
+  
+  
+
+}
