@@ -31,100 +31,104 @@
 </head>
 
 
-<body style="background-color: #F5F4F4; ">
+<body>
+
+
   <header>
+
+    <nav class="navbar fixed-top navbar-expand-lg " id="nav-header">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" id="button-toggel" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <p id="p-logo" >
+         <span id="text-logo" ><img  src="assets/brand.png"
+          style="width: 60px; height: 40px; background-color: black; margin-right:5px ; " alt="Brand">Bytový komplex Podhorská</span>
+           
+            
+        </p>
+       
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse " id="navbarRightAlignExample" style="width: 50% !important;">
+
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-2" id="ul-nav">
+
+            <li class="nav-item li-nav">
+              <a class="nav-link active a-nav" aria-current="page" href="search_page.html"><i class="fa fa-search"
+                  aria-hidden="true" style="margin-right: 5px;"></i>See Apartments</a>
+            </li>
+            <li class="nav-item li-nav">
+              <a class="nav-link a-nav" href="#map"><i class="fa fa-map-marker" aria-hidden="true"
+                  style="margin-right: 5px; "></i>Location</a>
+            </li>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown li-nav">
+              <a class="nav-link dropdown-toggle a-nav" href="#" id="navbarDropdown" role="button"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-phone" aria-hidden="true" style="margin-right: 5px;"></i>
+                Conact Us
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="tel:09999999999">0999999999</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#form">More Info</a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
 
 
     <!-- Background image -->
-    <div class="bg-image" style="
-            background-image: url('assets/1.jpg');
-            height: 100vh;
-            background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-            position: relative;
-          ">
-      <nav class=" navbar-expand-lg " style="margin-top: 10px;">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Toggle button -->
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
-            aria-label="Toggle navigation" style="color : rgb(124, 124, 124) ;">
-            <i class="fas fa-bars"></i>
-          </button>
+    <div class="bg-image" id="div-header-background">
 
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-            <!-- Left links -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-2">
-
-              <li class="nav-item" style="margin: 30px 40px 30px 0px;">
-                <a style=" color: rgb(124, 124, 124); font-size: large; font-weight: 700; font-family: 'Forum  27px', serif;"
-                  class="nav-link active" aria-current="page" href="search_page.html"><i class="fa fa-search"
-                    aria-hidden="true" style="margin-right: 5px; font-family: 'Forum'"></i>See Apartments</a>
-              </li>
-              <li class="nav-item" style="margin: 30px 40px 30px 0px;">
-                <a class="nav-link" href="#map"
-                  style=" color:rgb(124, 124, 124); font-size: large; font-weight: 700; font-family: 'Forum  27px', serif; "><i
-                    class="fa fa-map-marker" aria-hidden="true" style="margin-right: 5px; "></i>Location</a>
-              </li>
-              <!-- Navbar dropdown -->
-              <li class="nav-item dropdown" style="margin: 30px 90px 30px 0px;">
-                <a style=" color:rgb(124, 124, 124); font-size: large; font-weight: 700; font-family: 'Forum  27px', serif;"
-                  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
-                  aria-expanded="false">
-                  <i class="fa fa-phone" aria-hidden="true" style="margin-right: 5px;"></i>
-                  Conact Us
-                </a>
-                <!-- Dropdown menu -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="tel:09999999999">0999999999</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#form">More Info</a>
-                  </li>
-
-                </ul>
-              </li>
-
-            </ul>
-            <!-- Left links -->
-          </div>
-          <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
-      </nav>
     </div>
     <!-- Background image -->
   </header>
 
+
+
   <main id="main">
 
 
-    <div class=" mb-3 " style="max-width: 90%; border-radius: 24px; margin: 50px; background-color: #F5F4F4; ">
+    <div class="mb-3" id="first-card" >
       <div class="row g-0">
-        <div class="col-md-6" id="solar">
-          <img data-aos="fade-right"
-            style=" border-radius: 20px; max-width: 90%; margin: 30px 20px 20px 30px; box-shadow: -100px -30px #51C4D3;"
-            src="assets/1.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
-          <h5 data-aos="fade-up" class="card-text" style="margin-left: 30px ; color: black;">
+        <div class="col-md-6 left-text" id="solar">
+          <img data-aos="fade-right" id="img-one-left"
+            src="assets/1.jpg" alt="image of bulding" class="img-fluid rounded-start" />
+          <h5 data-aos="fade-up" class="card-text h5-card-content" >
             - Solar panels on the roof for heating water
           </h5>
-          <h5 data-aos="fade-up" class="card-text" style="margin-left: 30px ; color: black;">
+          <h5 data-aos="fade-up" class="card-text h5-card-content" >
             - Energy saving heat pump for heating flats
           </h5>
-          <h5 data-aos="fade-up" class="card-text" style="margin-left: 30px ; color: black;">
+          <h5 data-aos="fade-up" class="card-text h5-card-content" >
             - One building will have outside parking, one inside
           </h5>
-          <h5 data-aos="fade-up" class="card-text" style="margin-left: 30px ; color: black;">
+          <h5 data-aos="fade-up" class="card-text h5-card-content" >
             - Green plants surrounding to make good microclimate
           </h5>
 
           <br>
+
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 right-text">
           <div class="card-body">
             <h5 class="card-text" data-aos="fade-down">
               It ll have security system and closed area with gate
@@ -134,32 +138,32 @@
               charging electro cars
             </h5>
             <br>
-            <img data-aos="fade-left" style=" border-radius: 20px; box-shadow: 50px 30px #51C4D3;" src="assets/4.jpg"
-              alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
-
+            <img data-aos="fade-left" id="img-one-right"  src="assets/4.jpg"
+              alt="image of bulding" class="img-fluid rounded-start" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class=" mb-3 " style="max-width: 90%; border-radius: 24px; margin: 50px;background-color: #F5F4F4; ">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img data-aos="fade-right"
-            style=" border-radius: 20px; max-width: 90%; margin: 30px 20px 20px 30px;  box-shadow: -100px -30px #51C4D3;"
-            src="assets/6.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
 
-          <h5 data-aos="fade-up" class="card-text" style="margin-left: 30px ; color: black;">
+
+    <div class="mb-3" id="second-card" >
+      <div class="row g-0">
+        <div class="col-md-6 left-text ">
+          <img data-aos="fade-right" id="img-tow-left"
+            src="assets/6.jpg" alt="image of bulding" class="img-fluid rounded-start" />
+
+          <h5 data-aos="fade-up" class="card-text h5-card-content" >
             - Energy saving heat pump for heating flats
           </h5>
-          <h5 data-aos="fade-up" class="card-text" style="margin-left: 30px ; color: black;">
+          <h5 data-aos="fade-up" class="card-text h5-card-content" >
             - Electro charger for electric cars on every parking for building
           </h5>
 
-
           <br>
+
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 right-text">
           <div class="card-body">
             <h5 class="card-text" data-aos="fade-down">
               Every building ll have 12 flats and 3 floors
@@ -167,11 +171,9 @@
             <h5 class="card-text" data-aos="fade-down">
               Together we have 24 flats, all of them has balcony
             </h5>
-
-
-            <br>
-            <img data-aos="fade-left" style=" border-radius: 20px; box-shadow: 50px 30px #51C4D3;" src="assets/5.jpg"
-              alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+        <br>
+            <img data-aos="fade-left" id="img-tow-right" src="assets/5.jpg"
+              alt="image of bulding" class="img-fluid rounded-start" />
 
           </div>
         </div>
@@ -180,10 +182,7 @@
 
 
 
-
-
-
-    <div class="row row-cols-1 row-cols-md-1 g-4" style="margin: 60px 50px  25px 50px;">
+    <div class="row row-cols-1 row-cols-md-1 g-4" id="carsol-image"  >
       <div class="col">
         <div class="card h-100">
           <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
@@ -248,25 +247,26 @@
 
     </div>
 
+    <!-- Map (location) -->
     <div class="outer-div">
-      <iframe class="inner-div" id="map"
-        
-        width="600" height="450" style="border:0;  " allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="inner-div" id="map" width="600" height="450" style="border:0;  " allowfullscreen=""
+        loading="lazy"></iframe>
     </div>
-  
-    <div class="wrapper_centered" id="form">
-      <article class="letter">
+ 
+    <!-- comunication form -->
+    <div class="wrapper_centered outer-div" id="form">
+      <article class="letter inner-div">
         <div class="side">
           <h1>Contact us</h1>
-
+          <form action="https://formsubmit.co/adnangamil55@gmail.com" method="POST">
           <p>
             <textarea name="message" required placeholder="Your message"></textarea>
           </p>
         </div>
         <div class="side">
-          <form action="https://formsubmit.co/adnangamil55@gmail.com" method="POST"></form>
+         
           <p>
-            <input type="text" placeholder="Your name">
+            <input type="text" name="_subject" placeholder="Your name">
           </p>
           <p>
             <input name="email" required type="email" placeholder="Your email">
@@ -290,19 +290,19 @@
 
 
 
-  <footer class="bg-dark text-center text-white text-lg-start" id="fotter" style="margin-top: 400px !important;">
+  <footer class="bg-dark text-center text-white text-lg-start" id="fotter">
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-family: 'Forum', sans-serif;
-font-family: 'Slabo 27px', serif;">
-      <a href="http://codrex.co" style="color :white">powered by:<img style="width: 250px; height: 40px;"
-          src="assets/ddee.png" alt=""></a>
-
-
+    <div class="text-center p-3" id="div-footer">
+      <a href="http://codrex.co" style="color :white">powered by:<img id="img-footer" src="assets/ddee.png"
+          alt="logo footer"></a>
     </div>
     <!-- Copyright -->
 
   </footer>
+
+
+
 
   <!-- MDB -->
 
@@ -330,7 +330,7 @@ font-family: 'Slabo 27px', serif;">
     AOS.init({ duration: 2300, });
   </script>
 
-<script src="mainscript.js"></script>
+  <script src="mainscript.js"></script>
 
 </body>
 

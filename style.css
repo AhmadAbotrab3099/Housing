@@ -41,12 +41,232 @@
   }
   
 
+  body{
+    background-color: #F5F4F4 !important;
+  }
 
-  @media only screen and (min-width:100px) and (max-width :620px){
+  #nav-header{
+    background-color: #fff;
+  }
+
+
+
+  #div-header-background{
+    background-image: url('assets/1.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #button-toggel{
+    color : rgb(124, 124, 124) ; 
+    margin: 15px 0px 15px 7px;
+  }
+
+  #p-logo{
+    width: 45%; 
+    margin: 0px;
+  }
+
+  #text-logo{
+    float: right; 
+    height: 40px;  
+    margin: 5px 10px;
+  }
+
+  .li-nav{
+    margin-left: 18px;
+  }
+
+ .a-nav{
+    color: rgb(124, 124, 124) !important; 
+    font-size: large !important; 
+    font-weight: 700 !important; 
+    font-family: 'Forum  27px', serif !important;
+ }
+
+ #first-card{
+    max-width: 90%; 
+    border-radius: 24px; 
+    margin: 70px 50px ; 
+    background-color: #F5F4F4; 
+ }
+
+ #second-card{
+    max-width: 90%; 
+    border-radius: 24px; 
+    margin: 50px;
+    background-color: #F5F4F4; 
+ }
+
+ .h5-card-content{
+    margin-left: 30px ; color: black;
+ }
+
+ 
+
+ #img-one-left{
+    border-radius: 20px; 
+    max-width: 90%; 
+    margin: 30px 20px 20px 30px; 
+    box-shadow: -100px -30px #51C4D3;
+ }
+
+ #img-one-right{
+    border-radius: 20px; 
+    box-shadow: 50px 30px #51C4D3;
+}
+
+#img-tow-left{
+    border-radius: 20px; 
+    max-width: 90%;
+    margin: 30px 20px 20px 30px;  
+    box-shadow: -100px -30px #51C4D3;
+}
+
+#img-tow-right{
+    border-radius: 20px; 
+    box-shadow: 50px 30px #51C4D3;
+}
+
+#carsol-image{
+    margin: 60px 50px  25px 50px;
+}
+
+
+  #fotter{
+    margin-top: 400px !important;
+  }
+
+  #div-footer{
+    background-color: rgba(0, 0, 0, 0.2); 
+    font-family: 'Forum', sans-serif;
+    font-family: 'Slabo 27px', serif;
+  }
+
+  #img-footer{
+    width: 250px; height: 50px;
+  }
+
+
+
+  #ul-nav{
+    margin: 10px 40px 10px 0px; 
+  
+  }
+  #image-brand{
+      float: right;
+  }
+  
+
+  @media only screen and (min-width:320px) and (max-width :620px){
    
     body{
-        width: 120vh !important;
+        width: 200vw !important;
     }
+    #image-brand{
+        float: left;
+    }
+    #second-card{
+        margin-top: 150px;
+    }
+
+    .left-text{
+        margin-bottom: 50px;
+      }
+     
+      .right-text{
+         margin-top: 50px;
+      }
+
+  }
+
+  @media only screen and (min-width:246px) and (max-width :320px){
+   
+    body{
+        width: 250vw !important;
+    }
+    #image-brand{
+        float: left;
+    }
+
+    .left-text{
+        margin-bottom: 50px;
+      }
+     
+      .right-text{
+         margin-top: 50px;
+      }
+
+  }
+
+  @media only screen and (min-width:180px) and (max-width :246px){
+   
+    body{
+        width: 350vw !important;
+    }
+    #image-brand{
+        float: left;
+    }
+
+    .left-text{
+        margin-bottom: 50px;
+      }
+     
+      .right-text{
+         margin-top: 50px;
+      }
+
+  }
+
+  @media only screen and (min-width:100px) and (max-width :180px){
+   
+    body{
+        width: 450vw !important;
+    }
+    #image-brand{
+        float: left;
+    }
+
+    .left-text{
+        margin-bottom: 50px;
+      }
+     
+      .right-text{
+         margin-top: 50px;
+      }
+
+  }
+
+
+  @media only screen and (max-width :990px){
+    #p-logo{
+        width:95%; 
+        margin: 0px;
+        text-align: center !important;
+      }
+   
+
+    #image-brand{
+        float:left;
+    }
+    #text-logo{
+       text-align: center; 
+        height: 40px;  
+        margin: 5px 5px;
+        float: none;
+      }
+
+      .left-text{
+        margin-bottom: 50px;
+      }
+     
+      .right-text{
+         margin-top: 50px;
+      }
+   
 
   }
 
