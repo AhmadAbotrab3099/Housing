@@ -45,11 +45,12 @@
   .col-show{
     height: 80px;
     margin: 22px 0px 22px 0px !important;
-    border-right: 0.5px solid rgb(153, 153, 153);
+    border-left: 0.5px solid rgb(81 81 81);
   }
 
   .col-show-v{
     margin: 22px 0px 22px 0px !important;
+    border-left: 0.5px solid rgb(81 81 81);
     
   }
 
@@ -61,10 +62,14 @@
   color: rgb(236, 15, 15);
 }
  
-@media only screen and (min-width:75px) and (max-width :400px){
+@media only screen and (min-width:75px) and (max-width :500px){
    
   body{
       width: 120vh !important;
   }
+
+
+  
+  
 
 }
