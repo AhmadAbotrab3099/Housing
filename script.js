@@ -1,36 +1,87 @@
 const dataA = [
-    { flatNr: "1", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "2", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "3", rooms: "3", floor: "1.NP", flatSize: "67,97 m²", balconySize: "2,3 m²", price: 146500, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "4", rooms: "1", floor: "1.NP", flatSize: "38,04 m²", balconySize: "3,81 m²", price: 81990, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "5", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Reserved", src: 'assets/1.jpg' },
-    { flatNr: "6", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "7", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "8", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "9", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "10", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Reserved", src: 'assets/1.jpg' },
-    { flatNr: "11", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free", src: 'assets/1.jpg' },
-    { flatNr: "12", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free", src: 'assets/1.jpg' }
+    { flatNr: "1", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "2", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "3", rooms: "3", floor: "1.NP", flatSize: "67,97 m²", balconySize: "2,3 m²", price: 146500, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "4", rooms: "1", floor: "1.NP", flatSize: "38,04 m²", balconySize: "3,81 m²", price: 81990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "5", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "6", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "7", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "8", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "9", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "10", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "11", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' },
+    { flatNr: "12", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free",availabiltyS:"Slobodný", src: 'assets/1.jpg' }
   
   ]
   
   const dataB = [
-    { flatNr: "1", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "2", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "3", rooms: "3", floor: "1.NP", flatSize: "67,97 m²", balconySize: "2,3 m²", price: 146500, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "4", rooms: "1", floor: "1.NP", flatSize: "38,04 m²", balconySize: "3,81 m²", price: 81990, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "5", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "6", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Reserved", src: "assets/2.jpg" },
-    { flatNr: "7", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "8", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "9", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "10", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Reserved", src: "assets/1.jpg" },
-    { flatNr: "11", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free", src: "assets/1.jpg" },
-    { flatNr: "12", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free", src: "assets/1.jpg" },
+    { flatNr: "1", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "2", rooms: "2", floor: "1.NP", flatSize: "50,19 m²", balconySize: "4,3 m²", price: 107990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "3", rooms: "3", floor: "1.NP", flatSize: "67,97 m²", balconySize: "2,3 m²", price: 146500, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "4", rooms: "1", floor: "1.NP", flatSize: "38,04 m²", balconySize: "3,81 m²", price: 81990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "5", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "6", rooms: "2", floor: "2.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 111500, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/2.jpg" },
+    { flatNr: "7", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "8", rooms: "3", floor: "2.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 152500, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "9", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "10", rooms: "2", floor: "3.NP", flatSize: "50,65 m²", balconySize: "4,3 m²", price: 113990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "11", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
+    { flatNr: "12", rooms: "3", floor: "3.NP", flatSize: "69,29 m²", balconySize: "4,89 m²", price: 155990, availabilty: "Free",availabiltyS:"Slobodný", src: "assets/1.jpg" },
   ]
+
+  var dataTr = {
+    "english": 
+    {
+      "flatnr": "Flat nr.",
+      "rooms":"Rooms",
+      "floor":"Floor",
+      "size":"Size",
+      "balsize":"Balcony size",
+      "praice":"Sale price",
+      "ava":"Availability",
+    
+
+      },
+    "solovaki": 
+    {
+      "flatnr": "Ploché č.",
+      "rooms":"Izby",
+      "floor":"Podlaha",
+      "size":"Veľkosť",
+      "balsize":"Veľkosť balkóna",
+      "praice":"Predajná cena",
+      "ava":"Dostupnosť",
+       }
+   
+  }
   
-  
-  var i = 0;
+  if(window.addEventListener){
+    window.addEventListener('load', ()=>{
+      const flatnr = document.querySelectorAll('.flatnr');
+      const rooms = document.querySelectorAll('.rooms');
+      const floor = document.querySelectorAll('.floor');
+      const size = document.querySelectorAll('.size');
+      const balsize = document.querySelectorAll('.balsize');
+      const praice = document.querySelectorAll('.praice');
+      const ava = document.querySelectorAll('.ava');
+      
+
+      var attr = sessionStorage.getItem("lang").toString();
+      flatnr.forEach(el=>{el.textContent = dataTr[attr].flatnr;})
+
+      rooms.forEach(el=>{el.textContent = dataTr[attr].rooms;})
+
+      floor.forEach(el=>{el.textContent = dataTr[attr].floor;})
+
+      size.forEach(el=>{el.textContent = dataTr[attr].size;})
+
+      balsize.forEach(el=>{el.textContent = dataTr[attr].balsize;})
+
+      praice.forEach(el=>{el.textContent = dataTr[attr].praice;})
+
+      ava.forEach(el=>{el.textContent = dataTr[attr].ava;})
+
+      var i = 0;
   
   /* init Array dataA */
   for (i = 0; i < dataA.length; i++) {
@@ -57,7 +108,16 @@ const dataA = [
     imagea.src = dataA[i].src;
   
     let availabiltya = document.getElementById("avla" + (i + 1).toString());
-    availabiltya.innerHTML = dataA[i].availabilty;
+    console.log(attr);
+    if(attr=="english"){
+      availabiltya.innerHTML = dataA[i].availabilty;
+    }
+    else{
+      availabiltya.innerHTML = dataA[i].availabiltyS;
+    }
+
+    
+    
   
     if (dataA[i].availabilty == "Free") {
 
@@ -96,7 +156,13 @@ const dataA = [
     imageb.src = dataB[i].src;
   
     let availabiltyb = document.getElementById("avlb" + (i + 1).toString());
-    availabiltyb.innerHTML = dataB[i].availabilty;
+    if(attr=="english"){
+      availabiltyb.innerHTML = dataB[i].availabilty;
+    }
+    else{
+      availabiltyb.innerHTML = dataB[i].availabiltyS;
+    }
+    
   
     if (dataB[i].availabilty == "Free") {
       availabiltyb.classList.add("volny")
@@ -140,7 +206,13 @@ const dataA = [
         imagea.src = dataTop[i].src;
   
         let availabiltyat = document.getElementById("avla" + (i + 1).toString());
-        availabiltyat.innerHTML = dataTop[i].availabilty;
+        if(attr=="english"){
+          availabiltyat.innerHTML = dataTop[i].availabilty;
+        }
+        else{
+          availabiltyat.innerHTML = dataTop[i].availabiltyS;
+        }
+        
        
         if (dataTop[i].availabilty == "Free") {
           availabiltyat.classList.remove("rezervovany") 
@@ -185,7 +257,13 @@ const dataA = [
         imageb.src = dataTopB[i].src;
   
         let availabiltybt = document.getElementById("avlb" + (i + 1).toString());
-        availabiltybt.innerHTML = dataTopB[i].availabilty;
+        if(attr=="english"){
+          availabiltybt.innerHTML = dataTopB[i].availabilty;
+        }
+        else{
+          availabiltybt.innerHTML = dataTopB[i].availabiltyS;
+        }
+        
   
         if (dataTopB[i].availabilty == "Free") {
             availabiltybt.classList.remove("rezervovany");
@@ -231,7 +309,13 @@ const dataA = [
         imagea.src = dataDown[i].src;
   
         let availabiltyad = document.getElementById("avla" + (i + 1).toString());
-        availabiltyad.innerHTML = dataDown[i].availabilty;
+        if(attr=="english"){
+          availabiltyad.innerHTML = dataDown[i].availabilty;
+        }
+        else{
+          availabiltyad.innerHTML = dataDown[i].availabiltyS;
+        }
+        
   
         if (dataDown[i].availabilty == "Free") {
             availabiltyad.classList.remove("rezervovany");
@@ -272,7 +356,13 @@ const dataA = [
         imageb.src = dataDownB[i].src;
   
         let availabiltybd = document.getElementById("avlb" + (i + 1).toString());
-        availabiltybd.innerHTML = dataDownB[i].availabilty;
+        if(attr=="english"){
+          availabiltybd.innerHTML = dataDownB[i].availabilty;
+        }
+        else{
+          availabiltybd.innerHTML = dataDownB[i].availabiltyS;
+        }
+        
        
         if (dataDownB[i].availabilty == "Free") {
             availabiltybd.classList.remove("rezervovany");
@@ -295,6 +385,18 @@ const dataA = [
   
   
   
+		
+	
+
+   
+  
+              
+    })
+  }
+    
+  
+
+
   
   // var dataDown=data.sort((a,b) =>  b.price-a.price )
   // console.log(dataDown);

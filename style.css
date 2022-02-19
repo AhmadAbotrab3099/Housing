@@ -47,6 +47,7 @@
 
   #nav-header{
     background-color: #fff;
+    padding :2px;
   }
 
 
@@ -81,7 +82,7 @@
   }
 
  .a-nav{
-    color: rgb(124, 124, 124) !important; 
+    color: #ab9668 !important; 
     font-size: large !important; 
     font-weight: 700 !important; 
     font-family: 'Forum  27px', serif !important;
